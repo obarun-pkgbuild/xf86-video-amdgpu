@@ -3,8 +3,8 @@
 # 						Maintainer: Laurent Carlier <lordheavym@gmail.com>
 
 pkgname=xf86-video-amdgpu
-pkgver=1.3.0
-pkgrel=3
+pkgver=1.4.0
+pkgrel=2
 pkgdesc="X.org amdgpu video driver"
 arch=(x86_64)
 url="https://xorg.freedesktop.org/"
@@ -14,7 +14,7 @@ makedepends=('xorg-server-devel' 'X-ABI-VIDEODRV_VERSION=23')
 conflicts=('xorg-server<1.19.0' 'X-ABI-VIDEODRV_VERSION<23' 'X-ABI-VIDEODRV_VERSION>=24')
 groups=('xorg-drivers')
 source=(${url}/releases/individual/driver/${pkgname}-${pkgver}.tar.bz2)
-sha256sums=('c1630f228938be949273f72b29ae70822dde064ad79c3ccb14d55f427e3f4e70')
+sha256sums=('f8cac4bf3dd795b93cc337e5c0c62618026f597890a10d996f09c73eb88ba67c')
 validpgpkeys=('6DD4217456569BA711566AC7F06E8FDE7B45DAAC') # Eric Vidal <eric@obarun.org>
 
 build() {
